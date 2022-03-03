@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <head>
    
@@ -9,7 +8,5 @@
     JavaScript,espero aprender mucho"</h1>
     <script src="app.js"></script>
     </body>
-
-
 
 </html>
