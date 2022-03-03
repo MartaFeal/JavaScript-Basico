@@ -11,7 +11,9 @@ EJERCICIO 3 : En este ejercicio tendrás que recorrer los números del 1 al 100 
 
   Pista: tendréis que hacer un comprobación dentro del bucle.
 
-EJERCICIO 4 : En este segundo ejercicio, tendréis que crear un bucle que haga 10 iteraciones y en cada una indique el número de esta.
+EJERCICIO 4 : En el siguiente ejercicio, tendréis que crear un bucle que haga 10 iteraciones y en cada una indique el número de esta.
     Las iteraciones 2, 3, 5 y 7 deben imprimir en su lugar "Número primo".
     
- 
+EJERCICIO 5 : Tienes que crear una cadena de texto con una frase, por ejemplo: “El perro de mi vecina es muy molesto” y reemplazar la palabra vecina por vecino. Por consola tienes que mostrar la frase con las palabras cambiadas.
+
+EJERCICIO 6 : En este ejercicio debes que crear otra variable con una cadena de texto y convertir todo el contenido de la cadena a mayúsculas y lo mostraréis por consola.
