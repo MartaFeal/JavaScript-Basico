@@ -44,3 +44,54 @@ EJERCICIO 14 : Crea un archivo "ejercicio.js" que contenga una función sumar(a,
 
 EJERCICIO 15 : En el mismo archivo del ejercicio anterior ("ejercicio.js"), debes hacer uso de la función suma(a, b) que acabas de crear y proteger tu código para que, intencionadamente, podamos pasar un parámetro que no sea un número sin que salte un error que finalice el programa.
  En el catch, puedes poner un mensaje de aviso indicando que ese no es el uso correcto de la función.
+ 
+ EJERCICIO 16 : Crea un archivo "libreria.js" en el que implementes dos funciones:
+Una función saludar(String) que reciba como parámetro un nombre e imprima por consola "Hola, " + el parámetro.
+Otra función hora() que devuelva en el return la hora actual del sistema.
+Para la segunda función debes utilizar la librería "moment.js". Ambas funciones creadas deben ser exportadas para su posterior uso desde otro archivo Javascript.
+
+ EJERCICIO 17 : Crea un archivo "main.js" que importe el archivo "libreria.js" del ejercicio anterior y ejecute el siguiente código.
+ saludar("Alberto"); console.log("Son las " + hora());
+ 
+ EJERCICIO 18 : 
+En este ejercicio tendréis que crearla clase figura que tiene que tener como atributo _color
+ El constructor de Figura debe recibir como parámetro el valor del color y almacenarlo en _color.
+ Ya que la variable _color es privada, tenéis que crear un getter getColor() y un setter setColor(String).
+ 
+ EJERCICIO 19 : En este segundo ejercicio tendréis que crear dos clases, Circulo y Rectángulo, las cuales deben de heredar de Figura.
+ Circulo debe recibir dos parámetros en el constructor: radio (number) y color (String).
+ Rectángulo debe recibir tres parámetros en el constructor: base (number), altura (number) y color (String).
+ Los atributos de estas clases deben ser públicos.
+ 
+ EJERCICIO 20 : 
+Como último ejercicio, tendréis que crear un método calcularArea() en la clase Figura que devuelva el valor -1 para indicar que nuestra figura genérica no tiene área.
+ Implementa ese mismo método en las clases Circulo y Rectángulo que devuelvan el área de la figura en base a sus atributos.
+ Para calcular el área del círculo, PI puede ser 3.14 simplemente, sin más decimales.**
+ 
+ EJERCICIO 21 : Vamos a crear un div que será un rectángulo , o la forma geométrica que prefiráis.
+ El objetivo es que al entrar en ese rectángulo con nuestro ratón, el fondo se establezca como blanco, mientras que cuando salga, este cambie a un color aleatorio
+Para ello tendremos que crear tres funciones:
+Una que genere y devuelva un código de color (con su almohadilla #)
+Otra que aplique ese nuevo código de color al fondo y
+Por último una función que establezca el color en blanco de nuevo.
+ 
+EJERCICIO 22 :
+Vamos a realizar ahora una especie de "juego" en el que tendremos que adivinar las coordenadas de un lugar emblemático del mundo de entre tres opciones. La manera de seleccionar una respuesta será copiando las coordenadas.
+Al copiar la línea correcta, un aviso los aparecerá en la pantalla mediante un alert, si no acertamos también lo notificará.
+ 
+EJERCICIO 23 : Por último vamos a hacer un ejercicio que va a interactuar con un div en concreto.
+El objetivo es crear un div cuadrado que cambie de color cuando hacen click sobre el y que cambie de forma a un círculo al hacer doble click.
+Recuerda que ya hemos visto una función que cambia el color de fondo en el primer ejercicio.
+
+EJERCICIO 24 : En este ejercicio tendréis que crear una aplicación node con express que mostrará una lista de nombres al entrar en una url en concreto.
+De esta manera veremos cómo confeccionar de manera correcta el manejador de rutas con Express y cómo mostrar los elementos en una lista.
+Tendréis que crear una lista de nombres con una función para devolverlos. Crearéis la carpeta controllers en la raíz del proyecto. Dentro de esta, irá el archivo que contenga la función para devolver los nombres.
+Por último, tendréis que crear las plantillas par poder mostrar los nombres mediante HTML.
+Tendréis que subir el proyecto al campus.
+
+EJERCICIO 25: En este ejercicio, lo primero que tendréis que crear es un archivo HTML que contenga un header con un título y una sección que contendrá un botón y un mapa. Al pulsar el botón se hará una llamada al script y mostrará vuestra localización en un mapa.
+En el script, crearéis una función que se llamará verLocalizacion donde se utilizará el método getCurrentPosition y le pasaréis como parámetros las funciones verPosicion y verError.
+En la función verPosicion le pasaremos como parámetro nuestra posición.
+Dentro de la función crearéis dos variables: una contendrá las coordenadas de nuestra posición (latitud y altitud) y la otra variable tendrá la imagen de google maps con nuestra posición para luego insertarlo en el div que hemos creado con su identificador para que muestre el mapa.
+Y la función verError contendrá los casos de error con los que nos podremos encontrar.
+
