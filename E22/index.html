@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head></head>
+
+<body>
+    <h1>Vamos a realizar ahora una especie de "juego" en el que tendremos que adivinar las coordenadas de un lugar emblemático del mundo de entre tres opciones. La manera de seleccionar una respuesta será copiando las coordenadas. Al copiar la línea correcta, un aviso los aparecerá en la pantalla mediante un alert, si no acertamos también lo notificará. </h1>
+    <h2>Pregunta: ¿Cuáles son las coordenadas de la famosa Catedral de Santiago?</h2>
+        <div id="op1" style="width:250px; height:400px,">42°52′50″N 8°32′38″O</div>
+        <br>
+        <div id="op2" style="width:700px; height:100px,">40°27′11″N 3°41′18″O</div>
+        <br>
+        <div id="op3" style="width:700px; height:100px,">41°24′13″N 2°10′28″E</div>
+    
+    <br>
+    <button> Copia la respuesta correcta y pégala aquí:
+        <input type="text" id="resp" onkeypress="respuesta();">
+    </button>
+    <script type="text/javascript">
+        
+        function respuesta(){
+            let respuesta = document.getElementById("resp");
+            let op1 = '42°52′50″N 8°32′38″O';
+            if (respuesta == op1) {
+                window.alert('¡Has acertado!');
+            } else {
+                window.alert('¡Has fallado!');
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
