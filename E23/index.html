@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+#circulo {
+    width: 150px;
+    height: 150px;
+    background: #8AC007;
+    border-radius: 1000px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Por último vamos a hacer un ejercicio que va a interactuar con un div en concreto. El objetivo es crear un div cuadrado que cambie de color cuando hacen click sobre el y que cambie de forma a un círculo al hacer doble click. Recuerda que ya hemos visto una función que cambia el color de fondo en el primer ejercicio.
+    </h1>  
+    <div id="cuadrado" style="background-color: black; width:160px; height:160px;" ></div>
+<!-- 
+   <div id="circulo" style="width: 150px; height: 150px; background: red; border-radius: 1000px;"></div>     
+   -->
+    
+<script type="text/javascript">
+    
+    document.getElementById("cuadrado").onclick= mouseClick;
+    document.getElementById("cuadrado").onmouseleave = mouseLeave;
+    document.getElementById("cuadrado").ondblclick = mouseDbClick;
+    
+    
+
+        function mouseClick() {
+            document.getElementById("cuadrado").style.background = "purple";
+
+            }
+        
+        function mouseLeave(){
+            document.getElementById("cuadrado").style.background = "black";
+        }
+
+
+
+        function  mouseDbClick() {
+            let circulo = document.getElementById("cuadrado").innerHTML;
+            let circ = circulo.arc(100, 100, 100, 0, 2 * Math.PI);
+            
+        
+        }
+
+    
+
+</script>
+</body>
+
+</html>
